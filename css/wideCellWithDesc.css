@@ -1,0 +1,64 @@
+.wideCellWithDesc
+{
+    background-color: var(--skill-cell-color);
+    margin: 0.5vw;
+    border-radius: 1.5vw;
+    font-size: 1.25vw;
+}
+.wideCellWithDesc:hover
+{
+    background-color: var(--skill-cell-hover-color);
+}
+
+.wideCellWithDescTitle, .wideCellWithDescText
+{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    padding: 0.5vw;
+}
+.wideCellWithDescTitle
+{
+    font-size: 1.5vw;
+}
+.wideCellWithDescText
+{
+    font-size: 1vw;
+    text-align: left;
+    padding: 0.5vw 1.5vw 1.5vw 1.5vw;
+    color: rgb(215, 215, 215);
+}
+.wideCellWithDescBtn
+{
+    position: relative;
+    width: 5%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+}
+.wideCellGalleryTagsList
+{
+    text-align: center;
+}
+.wideCellWithDescArrow
+{
+    width: 1.5vw;
+    height: 1.5vw;
+    pointer-events: none;
+}
+
+@media (max-aspect-ratio: 1.0)
+{
+    .wideCellWithDesc
+    {
+        border-radius: 3vw;
+    }
+    .wideCellWithDescTitle
+    {
+        font-size: 3.5vw;
+    }
+    .wideCellWithDescText
+    {
+        font-size: 3.0vw;
+    }
+}

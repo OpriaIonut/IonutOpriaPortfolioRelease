@@ -1,0 +1,82 @@
+#homePanelParent
+{
+    position: relative;
+    top: 0px;
+}
+
+#banner
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#homePanelTitleParent
+{
+    z-index: 10;
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+#homePanelTitle
+{
+    font-size: 3.65vw;
+}
+
+#homePanelSubtitle
+{
+    font-size: 2.15vw;
+    color: var(--tertiary-color);
+}
+
+#homePanelContact
+{
+    font-size: 1vw;
+    color: var(--secondary-color);
+}
+
+.homePageReferalLink
+{
+    border-radius: 100%;
+    width: 2.75vw;
+    height: 2.75vw;
+    display: inline-block;
+    margin: 0.25vw;
+    border: 0.15vw solid #74a7ff;
+}
+.homePageReferalLink:hover
+{
+    border: 0.15vw solid #283956;
+}
+
+@media (max-aspect-ratio: 1.0)
+{
+    #banner
+    {
+        width: 150%;
+    }
+    #homePanelTitleParent
+    {
+        left: 35%;
+    }
+    #homePanelTitle
+    {
+        font-size: 7vw;
+    }
+    #homePanelSubtitle
+    {
+        font-size: 4vw;
+    }
+    .homePageReferalLink
+    {
+        width: 6vw;
+        height: 6vw;
+    }
+    #homePanelContact
+    {
+        font-size: 2.25vw;
+    }
+}

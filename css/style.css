@@ -1,0 +1,261 @@
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+*{
+    font-family: Montserrat;
+}
+
+html, body
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body
+{
+    background-color: var(--primary-color);
+    color: aliceblue;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.fullres
+{
+    width: 100%;
+    height: 100%;
+}
+
+.fullwidth
+{
+    width: 100%;
+}
+
+#pageParent
+{
+    position: relative;
+    width: 90%;
+    left: 47.5%;
+    transform: translateX(-50%);
+    margin: 2vw;
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    padding-bottom: 2vw;
+    box-shadow: 0 0 1.0vw rgba(0, 0, 0, 0.5);
+    overflow-x: hidden;
+}
+
+.sectionTitle
+{
+    font-size: 4vw;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-top: 2vw;
+}
+
+.subtitle
+{
+    font-size: 2.5vw;
+    color: var(--tertiary-color);
+    text-align: center;
+    padding: 1vw;
+}
+
+.separator
+{
+    width: 100%;
+    height: 0.25vh;
+    background-color: rgb(150, 150, 150);
+}
+
+#softwareProjectsPanel
+{
+    vertical-align: top;
+}
+
+.cellWithPreview
+{
+    display: inline-block;
+    margin: 0.5vw;
+    border: 3px solid #fff;
+}
+
+.cellWithPreviewProgressBar
+{
+    position: relative;
+    bottom: 4.5%;
+    left: 0px;
+    width: 0px;
+    height: 3%;
+    background-color: rgb(74, 255, 171);
+}
+
+#gameProjectsPanel
+{
+    background-color: var(--tertiary-background-color);
+}
+
+#endingPanelParent
+{
+    text-align: center;
+}
+
+#endingPanelText
+{
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#copyright
+{
+    font-size: 0.75vw;
+    padding: 1vw;
+    margin-top: 2vw;
+    background-color: var(--tertiary-background-color);
+}
+
+.bulletPointList
+{
+   position: relative;
+   float: right;
+   width: 97%;
+   left: 0px;
+   padding-bottom: 3vw;
+   color: rgb(200, 200, 200);
+}
+
+#colorThemeBtnParent
+{
+    position: fixed;
+    bottom: 4vw;
+    left: 1vw;
+    width: 1.5vw;
+    height: 10vw;
+    text-align: center;
+}
+
+.colorThemeBtn
+{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.grayscale
+{
+    filter: grayscale(100%);
+}
+
+#languageChart, #softwareChart
+{
+    color: aliceblue;
+    width: 40vw;
+    height: 25vw;
+    margin: 1vw;
+    display: inline-block;
+}
+
+.centerText
+{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#warningMsg
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color);
+}
+
+#warningMsgText
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-size: 5vw;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.descriptionText
+{
+    font-size: 1.0vw;
+    padding: 3vw;
+    padding-top: 0px;
+    text-align: left;
+}
+
+@media (min-aspect-ratio: 2.5 / 1.0)
+{
+    #pageParent
+    {
+        width: 75%;
+    }
+}
+
+@media(max-aspect-ratio: 1.0)
+{
+    #pageParent
+    {
+        width: 92.5%;
+    }
+    .sectionTitle
+    {
+        font-size: 7vw;
+    }
+
+    .subtitle
+    {
+        font-size: 5vw;
+    }
+
+    #languageChart, #softwareChart
+    {
+        width: 100%;
+        height: 75vw;
+        margin: 1vw;
+    }
+
+    #colorThemeBtnParent
+    {
+        bottom: 10vw;
+        left: 1.5vw;
+        width: 4.0vw;
+        height: 20vw;
+    }
+
+    .colorThemeBtn
+    {
+        width: 4.0vw;
+        height: 4.0vw;
+        margin-bottom: 0.5vw;
+    }
+
+    #endingPanelText
+    {
+        position: relative;
+        font-size: 3.5vw;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #copyright
+    {
+        font-size: 2.0vw;
+        padding: 2vw;
+    }
+}

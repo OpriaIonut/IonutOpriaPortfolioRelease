@@ -1,0 +1,38 @@
+#aboutMeParent
+{
+    background-color: var(--secondary-background-color);
+}
+
+#aboutMeDescription
+{
+    font-size: 1.0vw;
+    padding: 3vw;
+    padding-top: 0px;
+    text-align: left;
+    /* position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%); */
+}
+
+#aboutMePhoto
+{
+    position: relative;
+    float: right;
+    margin: 2vw;
+    width: 15vw;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+@media (max-aspect-ratio: 1.0)
+{
+    #aboutMePhoto
+    {
+        width: 30vw;
+    }
+    #aboutMeDescription
+    {
+        font-size: 3vw;
+    }
+}

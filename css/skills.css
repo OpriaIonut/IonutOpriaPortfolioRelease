@@ -1,0 +1,39 @@
+#skillCharts
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: var(--tertiary-background-color);
+}
+
+.skillChartItem
+{
+    width: 45%;
+    margin: 1vw;
+    height: auto;
+    display: inline-block;
+}
+
+#specialSkillsPanel
+{
+    width: 100%;
+    text-align: center;
+    background-color: var(--tertiary-background-color);
+}
+
+#specialSkillsArt, #specialSkillsProgramming
+{
+    vertical-align: top;
+    width: 45%;
+    display: inline-block;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+@media (max-aspect-ratio: 1.0)
+{
+    #specialSkillsArt, #specialSkillsProgramming
+    {
+        width: 95%;
+    }
+}

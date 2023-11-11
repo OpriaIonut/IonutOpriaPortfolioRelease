@@ -1,0 +1,60 @@
+.wideCellGallery
+{
+    width: 96%;
+    padding: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.wideCellGalleryLeftPanel
+{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.wideCellGalleryRightPanel
+{
+    display: inline-block;
+    width: 60%;
+    height: auto;
+}
+
+.wideCellGalleryTitle
+{
+    font-size: 2.5vw;
+    text-align: center;
+    padding-bottom: 0.25vw;
+    color: var(--tertiary-color);
+}
+
+.wideCellGalleryTag, .multiCellWithGalleryTag
+{
+    width: auto;
+    display: inline-block;
+    padding: 0.25vw;
+    margin: 0.1vw;
+    margin-top: 1.0vw;
+    border-radius: 0.5vw;
+    font-size: 0.75vw;
+}
+
+.wideCellGalleryDescription
+{
+    font-size: 1.0vw;
+    padding-right: 1vw;
+    text-align: left;
+}
+
+@media (max-aspect-ratio: 1.0)
+{
+    .wideCellGalleryTag, .multiCellWithGalleryTag
+    {
+        font-size: 2.0vw;
+        padding: 0.75vw;
+        border-radius: 1.0vw;
+        margin: 0.35vw;
+    }
+}
