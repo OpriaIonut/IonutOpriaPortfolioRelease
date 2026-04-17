@@ -1,4 +1,9 @@
-#threeModelViewParent
+#artProjectsPanel
+{
+    background-color: var(--tertiary-background-color);
+}
+
+#threeModelViewParent, #shaderVisualizerParent
 {
     position: fixed;
     top: 0px;
@@ -7,9 +12,10 @@
     height: 100%;
     background-color: #00000099;
     font-size: 1vw;
+    z-index: 100;
 }
 
-#threeModelView
+#threeModelView, #shaderVisualizer
 {
     position: fixed;
     top: 50%;
@@ -18,6 +24,10 @@
     height: 90%;
     transform: translateX(-50%) translateY(-50%);
     border: 3px solid #fff;
+}
+#shaderVisualizer
+{
+    width: 89.6%;
 }
 
 #threeViewSettingsParent
@@ -49,11 +59,18 @@
     background-color: #121212dd;
     padding: 0.75vw;
     margin: 0.75vw;
+    cursor: pointer;
+}
+
+.buttonsWithSelection:hover
+{
+    background-color: var(--secondary-color);
+    filter: brightness(50%);
 }
 
 .buttonsWithSelectionSelected
 {
-    background-color: #33c0c5dd;
+    background-color: var(--secondary-color);
     padding: 0.75vw;
     margin: 0.75vw;
 }
@@ -67,6 +84,10 @@
     padding: 0.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
+}
+.closeBtn:hover
+{
+    background-color: rgb(108, 28, 28);
 }
 
 .buttonsWithSelectionTitle
@@ -91,18 +112,37 @@
 
 .horizontalSliderBtn
 {
+    position: relative;
     width: 40%;
     height: 100%;
     border-radius: 3vw;
     display: inline-block;
     background-color: rgb(62, 76, 78);
     text-align: center;
-    border: 0.35vw solid #fff;
+    border: 0.15vw solid #fff;
     user-select: none;
+}
+
+.horizontalSliderBtn:hover
+{
+    background-color: rgb(22, 27, 28);
 }
 
 .horizontalSliderText
 {
+    pointer-events: none;
+}
+
+.sliderArrow
+{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 1vw;
+    height: 1vw;
+    background-image: url("../images/ui/next.png");
+    background-size: cover;
+    transform: translateY(-50%) scale(-1, 1);
     pointer-events: none;
 }
 
@@ -124,7 +164,12 @@
     padding: 0.5vw;
     bottom: 0px;
     text-align: center;
-    background-color: #33c0c5dd;
+    background-color: var(--secondary-color);
+}
+
+#modelDownloadBtn:hover
+{
+    filter: brightness(50%);
 }
 
 #artistCredits
@@ -135,7 +180,7 @@
     width: auto;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.0vw;
 }
 
 #artistCredits > a
@@ -144,10 +189,19 @@
     text-decoration: none;
 }
 
+#artistCredits > a:hover
+{
+    color: rgb(195, 195, 0);
+}
+
 #artistCredits > a:visited
 {
     color: yellow;
     text-decoration: none;
+}
+#artistCredits > a:visited:hover
+{
+    color: rgb(195, 195, 0);
 }
 
 @media (max-aspect-ratio: 1.0)
@@ -159,7 +213,7 @@
         height: 30%;
     }
     
-    #threeModelViewParent
+    #threeModelViewParent, #shaderVisualizerParent
     {
         font-size: 3vw;
     }

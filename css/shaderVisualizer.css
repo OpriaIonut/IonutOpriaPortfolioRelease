@@ -1,0 +1,93 @@
+#codePanelParent
+{
+    position: fixed;
+    background-color: brown;
+    top: 0px;
+    right: 0px;
+    width: 40%;
+    height: 100%;
+    z-index: 100;
+}
+
+#codePanelHeader
+{
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    height: 10%;
+    font-size: 0.75vw;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+#codePanelInspector
+{
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: 90%;
+    white-space: pre-wrap;
+    font-size: 0.75vw;
+    font-family: "Roboto";
+    color: rgb(225, 225, 225);
+    padding-left: 1.0vw;
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#codePanelInspector > span
+{
+    font-family: "Roboto";
+}
+
+#codePanelActivationBtn
+{
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    width: 3vw;
+    height: 3vw;
+    transform: translateY(-50%);
+    background-image: url("../images/ui/next.png");
+    background-size: cover;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#codePanelActivationBtn:hover
+{
+    filter: brightness(0.5);
+}
+
+.shaderBtnHeader
+{
+    background-color: #121212dd;
+    padding: 0.5vw;
+    margin: 0.5vw;
+    width: auto;
+    height: 0.9vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shaderBtnHeader:hover
+{
+    background-color: var(--secondary-color);
+    filter: brightness(50%);
+}
+
+.shaderBtnHeaderSelected
+{
+    background-color: var(--secondary-color);
+    padding: 0.5vw;
+    margin: 0.5vw;
+    width: auto;
+    height: 0.9vw;
+    text-align: center;
+    cursor: default;
+}
